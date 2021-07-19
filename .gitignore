@@ -1,0 +1,5 @@
+#ignore all .feather files
+*.feather
+
+# Ignore mac file
+.DS_Store
