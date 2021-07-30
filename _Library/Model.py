@@ -4,11 +4,13 @@ import seaborn as sns
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
-def Model_Predict(X_train, y_train):
+
+
+def Model_Predict(X_train, y_train, n_estimators = 200, ):
     model = RandomForestRegressor(n_estimators = 200,
                                 #max_depth = 10,
                                 #max_features = 5,
-                                random_state = 0,
+                                random_state = 0
                                 )
     model.fit(X_train, y_train)
     return model
