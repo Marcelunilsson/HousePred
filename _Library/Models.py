@@ -1,10 +1,7 @@
 # Other imports ---------------------------------------------
 import pandas as pd
 import numpy as np
-<<<<<<< HEAD
 import matplotlib.pyplot as plt
-=======
->>>>>>> 2fee0243e3147665a6c579b7cb1b59ff7bebd945
 import seaborn as sns
 
 # Random forest imports ---------------------------------------------
@@ -54,11 +51,7 @@ def predict(model,
                           mean_absolute_error(yt, yp),
                           np.mean(np.abs((np.array(yt) - np.array(yp))/ np.array(yt))) * 100,
                           r2_score(yt, yp))
-<<<<<<< HEAD
     plt.show()
-=======
-
->>>>>>> 2fee0243e3147665a6c579b7cb1b59ff7bebd945
     print(f"MSE: {mse} \nMAE: {mae} \nMAPE: {mape} \nR2: {r2}")
     return y_concat
     
@@ -80,9 +73,5 @@ def random_forest(X, y,
                                   random_state = random_state)
     model.fit(X_train, y_train)
     post.Export_Variables(model, Scaler_Fitted, encoder)
-<<<<<<< HEAD
     return model, predict(model, X_test, y_test)
-=======
-    return predict(model, X_test, y_test)
->>>>>>> 2fee0243e3147665a6c579b7cb1b59ff7bebd945
     

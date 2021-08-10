@@ -2,11 +2,7 @@
 *.feather
 
 # Ignore mac file
-<<<<<<< HEAD
 .DS_Store
 
 #
 *.sav
-=======
-.DS_Store
->>>>>>> 2fee0243e3147665a6c579b7cb1b59ff7bebd945
