@@ -58,6 +58,7 @@ def predict(model,
 
 
 def random_forest(X, y, 
+                  model_name,
                   n_estimators = 200,
                   max_depth = 10,
                   max_features = 5,
@@ -72,6 +73,6 @@ def random_forest(X, y,
     model = RandomForestRegressor(n_estimators=n_estimators,
                                   random_state = random_state)
     model.fit(X_train, y_train)
-    post.Export_Variables(model, Scaler_Fitted, encoder)
+    post.Export_Variables(model, Scaler_Fitted, encoder, model_name)
     return model, predict(model, X_test, y_test)
     

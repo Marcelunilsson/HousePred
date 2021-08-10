@@ -1,16 +1,15 @@
 
 import pandas as pd
 import numpy as np
-
-from sklearn.model_selection import train_test_split
-
 import sys; sys.path.insert(0, '..')
 from _Library import _Library as lib
+import sys
 
+model_name = sys.argv[1]
 #%pylab inline
 
 
-encoder, scaler, model = lib.pre.Import_Variables()
+encoder, scaler, model = lib.pre.Import_Variables(model_name)
 #df = pd.read_feather('../2_Feature Engineering/EngineeredData.feather').set_index("id")
 new_df = pd.read_excel('../_Datasets/new_df.xls')
 

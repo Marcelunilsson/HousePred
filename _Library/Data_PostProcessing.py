@@ -1,7 +1,8 @@
 import joblib
 import pickle
 
-def Export_Variables(model, Scaler_Fitted, encoder):
-    pickle.dump(model, open('../_Library/Variables/model.sav', 'wb'))
-    joblib.dump(Scaler_Fitted, '../_Library/Variables/scaler.joblib')
-    joblib.dump(encoder, '../_Library/Variables/encoder.joblib')
+
+def Export_Variables(model, Scaler_Fitted, encoder, model_name):
+    pickle.dump(model, open(f'../_Library/Variables/model_{model_name}.sav', 'wb'))
+    joblib.dump(Scaler_Fitted, f'../_Library/Variables/scaler_{model_name}.joblib')
+    joblib.dump(encoder, f'../_Library/Variables/encoder_{model_name}.joblib')

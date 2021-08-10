@@ -4,5 +4,8 @@
 # Ignore mac file
 .DS_Store
 
-#
+# Ignore .sav files
 *.sav
+
+# Ignore .joblib files
+*.joblib
