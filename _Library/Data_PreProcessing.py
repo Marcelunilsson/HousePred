@@ -7,9 +7,9 @@ from sklearn.preprocessing import OneHotEncoder, MinMaxScaler
 
 
 def Import_Variables(model_name):
-    encoder = joblib.load(f'../_Library/Variables/encoder_{model_name}.joblib')
-    scaler = joblib.load(f'../_Library/Variables/scaler_{model_name}.joblib')
-    model = pickle.load(open(f'../_Library/Variables/model_{model_name}.sav', 'rb'))
+    encoder = joblib.load(f'../_Library/Variables/{model_name}/encoder_{model_name}.joblib')
+    scaler = joblib.load(f'../_Library/Variables/{model_name}/scaler_{model_name}.joblib')
+    model = pickle.load(open(f'../_Library/Variables/{model_name}/model_{model_name}.sav', 'rb'))
     return encoder, scaler, model
 
 def Creating_New_Features(df):
