@@ -98,4 +98,4 @@ df2["SkillnadUtropspris:A(kr):O"] = df["price_difference"].astype(np.float32)
 
 
 # Save The formated dataframe
-df2.reset_index().to_feather("_Datasets/CleanedData.feather")
+df2.reset_index().to_feather("1_CleanData/CleanedData.feather")

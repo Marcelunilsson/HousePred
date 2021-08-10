@@ -15,5 +15,5 @@ df = pre.Inter_Quartile_Range_Split(df)
 
 X, y = sel.Defining_X_and_Y(df)
 
-y.reset_index().to_feather("y.feather")
-X.reset_index().to_feather("X.feather")
+y.reset_index().to_feather("../3_Feature_Selection/y.feather")
+X.reset_index().to_feather("../3_Feature_Selection/X.feather")
