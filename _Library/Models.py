@@ -62,7 +62,7 @@ def random_forest(X, y,
                   n_estimators = 200,
                   max_depth = 10,
                   max_features = 5,
-                  random_state = 0
+                  random_state = 42
                   ):
     X = pre.Convert_to_Float32_and_String(X)
     y = pre.Convert_to_Float32_and_String(y)
